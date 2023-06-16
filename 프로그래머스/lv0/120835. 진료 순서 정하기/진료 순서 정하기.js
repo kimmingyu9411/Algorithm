@@ -5,8 +5,8 @@ function solution(emergency) {
       clone[i]=emergency[i]
     }
     for(let i=0; i<clone.length; i++){
-        for(let j=0; j<clone.length; j++){
-            if(clone[i]>clone[j]){
+        for(let j=i+1; j<clone.length; j++){
+            if(clone[i]<clone[j]){
               let x=clone[i];
               clone[i]=clone[j];
               clone[j]=x;
