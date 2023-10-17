@@ -1,10 +1,10 @@
 function solution(numbers, direction) {
     if (direction == 'right') {
-        var removedElement = numbers.pop();
-        numbers.unshift(removedElement);
+        var pop_number = numbers.pop();
+        numbers.unshift(pop_number);
     } else {
-        var removedElement = numbers.shift();
-        numbers.push(removedElement);
+        var shift_number = numbers.shift();
+        numbers.push(shift_number);
     }
     return numbers;
 }
